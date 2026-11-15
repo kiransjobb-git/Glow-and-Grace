@@ -1,0 +1,827 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow & Grace | Skincare & Beauty</title>
+
+    <link rel="icon" type="image/png" href="Images/g&glogo1.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="main.js"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <nav class="nav-bar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <img src="Images/g&glogo1.png" alt="Glow & Grace Logo">
+            </div>
+
+            <div class="brand-title">
+                <h1>GLOW <span>& GRACE</span></h1>
+                <p>SKINCARE • BEAUTY • WELLNESS</p>
+            </div>
+
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li class="dropdown">
+
+                <a href="index.html" class="home-btn" id="homeDropdownBtn" data-page="home">
+                    Home
+                    <span class="caret">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </a>
+
+                <ul class="dropdown-menu" id="homeDropdown">
+                    <li><a href="index.html">Home Classic</a></li>
+                    <li><a href="home2.html">Home Standard</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="about.html" class="nav-link" data-page="about">About Us</a></li>
+            <li><a href="skincare.html" class="nav-link" data-page="skincare">Skincare</a></li>
+            <li><a href="products.html" class="nav-link" data-page="products">Products</a></li>
+            <li><a href="blog.html" class="nav-link" data-page="blog">Blogs</a></li>
+            <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+
+        </ul>
+
+        <div class="toggles">
+
+            <button class="utility-toggle" id="rtl-toggle"
+                aria-label="Toggle RTL">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+
+            <button class="utility-toggle" id="theme-toggle"
+                aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <a href="order.html" class="primary-btn">
+                Order Now
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<main>
+    <!-- =====================================
+     CONTACT PAGE HERO SECTION
+===================================== -->
+
+<section class="contact-hero">
+
+    <div class="contact-hero-overlay"></div>
+
+    <div class="contact-hero-content">
+
+        <span class="contact-subtitle">
+            WE ARE HERE FOR YOU
+        </span>
+
+        <h1>
+            Let's Talk About
+            <span>Your Skin</span>
+        </h1>
+
+        <p>
+            Have questions about your skincare routine or
+            need help finding the right products? We're here
+            to guide you on your journey to healthy, glowing skin.
+        </p>
+
+        <div class="contact-hero-buttons">
+
+            <a href="#contact-form" class="contact-primary-btn">
+                Get In Touch
+            </a>
+
+            <a href="#contact-info" class="contact-secondary-btn">
+                Explore Contact Details
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     SECTION 2 - CONTACT INFORMATION
+===================================== -->
+
+<section class="contact-info-section" id="contact-info">
+
+    <div class="contact-info-container">
+
+        <div class="contact-info-heading">
+
+            <span class="contact-info-label">
+                CONTACT INFORMATION
+            </span>
+
+            <h2>
+                We'd Love to <span>Hear From You</span>
+            </h2>
+
+            <p>
+                Whether you have a question, need skincare advice,
+                or simply want to say hello, our team is always
+                happy to help.
+            </p>
+
+        </div>
+
+
+        <div class="contact-info-grid">
+
+            <!-- EMAIL -->
+
+            <div class="contact-info-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <h3>Email Us</h3>
+
+                <p>
+                    Have questions? Send us an email
+                    and we'll get back to you.
+                </p>
+
+                <a href="mailto:hello@glowandgrace.com">
+                    hello@glowandgrace.com
+                </a>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="contact-info-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <h3>Call Us</h3>
+
+                <p>
+                    Speak directly with our friendly
+                    customer support team.
+                </p>
+
+                <a href="tel:+91 9812345678">
+                    +91 9812345678
+                </a>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-info-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <h3>Our Location</h3>
+
+                <p>
+                    Visit us or connect with us
+                    from wherever you are.
+                </p>
+
+                <span class="contact-detail">
+                    Hyderabad, Telangana, India
+                </span>
+
+            </div>
+
+
+            <!-- WORKING HOURS -->
+
+            <div class="contact-info-card">
+
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <h3>Working Hours</h3>
+
+                <p>
+                    We're available to assist you
+                    throughout the week.
+                </p>
+
+                <span class="contact-detail">
+                    Monday – Saturday
+                    <br>
+                    9:00 AM – 6:00 PM
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     CONTACT INTRO SECTION
+     GLOW & GRACE
+===================================== -->
+
+<section class="contact-intro">
+
+    <div class="contact-intro-container">
+
+        <!-- LEFT IMAGE -->
+
+        <div class="contact-intro-image">
+            <img src="Images/contac-pagesec3.jpg"
+                 alt="Glow and Grace skincare support">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+
+        <div class="contact-intro-content">
+
+            <span class="contact-label">LET'S CONNECT</span>
+
+            <h2>
+                We're Here for
+                <span>Your Glow</span>
+            </h2>
+
+            <p class="contact-description">
+                Your skincare journey matters to us. Whether you need
+                help choosing the right products, have questions about
+                your routine, or simply want to share your experience,
+                our team is always happy to help.
+            </p>
+
+            <div class="contact-support-list">
+
+                <div class="contact-support-item">
+                    <div class="contact-support-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+
+                    <div>
+                        <h3>Skincare Guidance</h3>
+                        <p>
+                            Need help understanding your skin?
+                            We're here to guide you.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-support-item">
+                    <div class="contact-support-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+
+                    <div>
+                        <h3>Product Assistance</h3>
+                        <p>
+                            Get support with product details,
+                            usage and recommendations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-support-item">
+                    <div class="contact-support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+
+                    <div>
+                        <h3>We're Listening</h3>
+                        <p>
+                            Your feedback and questions help us
+                            make your experience better.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#contact-form" class="contact-intro-btn">
+                GET IN TOUCH
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SECTION 3 - CONTACT FORM
+===================================== -->
+
+<section class="contact-form-section" id="contact-form">
+
+    <div class="contact-form-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="contact-form-content">
+
+            <span class="contact-form-label">
+                LET'S CONNECT
+            </span>
+
+            <h2>
+                Send Us a
+                <span>Message</span>
+            </h2>
+
+            <p>
+                Have a question about our products or need help
+                choosing the right skincare routine? Fill out the
+                form and our team will be happy to assist you.
+            </p>
+
+            <div class="contact-form-note">
+
+                <div class="contact-note-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+
+                <div>
+                    <h4>We're Here to Help</h4>
+                    <p>
+                        Your skincare journey matters to us.
+                        Let's find the answers together.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="contact-form-note">
+
+                <div class="contact-note-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+
+                <div>
+                    <h4>Quick Response</h4>
+                    <p>
+                        Our support team aims to respond
+                        within 1–2 business days.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT CONTACT FORM -->
+
+        <div class="contact-form-wrapper">
+
+            <form id="glowContactForm">
+
+                <div class="contact-input-row">
+
+                    <div class="contact-input-group">
+                        <label for="contactName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="contact-input-group">
+                        <label for="contactEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="contact-input-group">
+
+                    <label for="contactSubject">Subject</label>
+
+                    <select
+                        id="contactSubject"
+                        name="subject"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Select an enquiry type
+                        </option>
+
+                        <option value="Product Enquiry">
+                            Product Enquiry
+                        </option>
+
+                        <option value="Skincare Advice">
+                            Skincare Advice
+                        </option>
+
+                        <option value="Order Support">
+                            Order Support
+                        </option>
+
+                        <option value="Feedback">
+                            Feedback
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="contact-input-group">
+
+                    <label for="contactMessage">Your Message</label>
+
+                    <textarea
+                        id="contactMessage"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us how we can help you..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="contact-submit-area">
+
+                    <button type="submit" class="contact-submit-btn">
+                        Send Message
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <p id="contactFormStatus" role="status"
+                       aria-live="polite"></p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+     SECTION 4 - OUR LOCATION
+===================================== -->
+
+<section class="contact-location-section">
+
+    <div class="contact-location-container">
+
+        <!-- SECTION HEADING -->
+
+        <div class="contact-location-heading">
+
+            <span>COME SAY HELLO</span>
+
+            <h2>
+                Visit <span>Our Space</span>
+            </h2>
+
+            <p>
+                We'd love to connect with you. Find our location
+                and get in touch with the Glow & Grace team.
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION CONTENT -->
+
+        <div class="contact-location-grid">
+
+            <!-- MAP -->
+
+            <div class="contact-map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Hyderabad,Telangana,India&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Glow and Grace Location Map">
+                </iframe>
+
+            </div>
+
+
+            <!-- LOCATION DETAILS -->
+
+            <div class="contact-location-details">
+
+                <span class="location-small-title">
+                    GLOW & GRACE
+                </span>
+
+                <h3>
+                    Let's Meet in Person
+                </h3>
+
+                <p>
+                    Whether you're looking for skincare guidance
+                    or want to learn more about our products,
+                    we're always happy to connect.
+                </p>
+
+
+                <div class="location-detail-item">
+
+                    <div class="location-detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div>
+                        <h4>Our Address</h4>
+                        <p>Hyderabad, Telangana, India</p>
+                    </div>
+
+                </div>
+
+
+                <div class="location-detail-item">
+
+                    <div class="location-detail-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday – Saturday</p>
+                        <p>9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+
+                <div class="location-detail-item">
+
+                    <div class="location-detail-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h4>Email Support</h4>
+                        <p>hello@glowandgrace.com</p>
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Hyderabad+Telangana+India"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="location-directions-btn">
+
+                    Get Directions
+                    <i class="fas fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT PAGE FINAL CTA -->
+
+<section class="contact-cta">
+    <div class="contact-cta-content">
+
+        <span class="contact-cta-tag">YOUR GLOW JOURNEY STARTS HERE</span>
+
+        <h2>
+            Let's Make Your Skin
+            <span>Glow With Confidence.</span>
+        </h2>
+
+        <p>
+            Have questions about your skincare routine or need help
+            finding the right products? We're here to guide you.
+            Reach out to our team and take the first step towards
+            healthier, happier skin.
+        </p>
+
+        <div class="contact-cta-buttons">
+            <a href="products.html" class="cta-primary">
+                Explore Our Products
+            </a>
+
+            <a href="skincare.html" class="cta-secondary">
+                Take Skin Quiz
+            </a>
+        </div>
+
+        <div class="contact-cta-note">
+            Your Glow, Your Signature.
+        </div>
+
+    </div>
+</section>
+
+
+
+
+</main>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-bar">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-brand-logo">
+                    <img src="Images/g&glogo1.png" alt="Glow & Grace Logo">
+                </div>
+
+                <div class="footer-brand-title">
+                    <h2>GLOW <span>& GRACE</span></h2>
+                    <p>SKINCARE • BEAUTY • WELLNESS</p>
+                </div>
+
+            </div>
+
+            <div class="brand-info">
+                <p>
+                    Thoughtful skincare, simple routines and everyday
+                    moments of self-care. Every kind of skin deserves care.
+                </p>
+            </div>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a>
+            <a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a>
+            <a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blogs</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Skincare</h3>
+
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Cleansers</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Serums</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Moisturizers</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Sunscreen</a>
+            <a href="services.html"><i class="fa-solid fa-chevron-right"></i> Skin Consultation</a>
+            <a href="booking.html"><i class="fa-solid fa-chevron-right"></i> Book Consultation</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Customer Support</h3>
+
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> FAQs</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Shipping Information</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Returns & Refunds</a>
+            <a href="privacy-policy.html"><i class="fa-solid fa-chevron-right"></i> Privacy Policy</a>
+            <a href="terms-of-service.html"><i class="fa-solid fa-chevron-right"></i> Terms of Service</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Support</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+
+            <p><i class="fa-solid fa-envelope"></i> hello@glowandgrace.com</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</p>
+
+            <p><i class="fa-regular fa-clock"></i> Mon - Sat: 9 AM - 6 PM</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2026 Glow & Grace. All Rights Reserved.
+        </p>
+
+        <div class="footer-legal-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+
+</body>
+</html>

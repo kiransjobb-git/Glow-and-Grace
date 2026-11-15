@@ -1,0 +1,1289 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow & Grace | Skincare & Beauty</title>
+
+    <link rel="icon" type="image/png" href="Images/g&glogo1.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <nav class="nav-bar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                <img src="Images/g&glogo1.png" alt="Glow & Grace Logo">
+            </div>
+
+            <div class="brand-title">
+                <h1>GLOW <span>& GRACE</span></h1>
+                <p>SKINCARE • BEAUTY • WELLNESS</p>
+            </div>
+
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li class="dropdown">
+
+                <a href="index.html" class="home-btn" id="homeDropdownBtn" data-page="home">
+                    Home
+                    <span class="caret">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </a>
+
+                <ul class="dropdown-menu" id="homeDropdown">
+                    <li><a href="index.html">Home Classic</a></li>
+                    <li><a href="home2.html">Home Standard</a></li>
+                </ul>
+
+            </li>
+
+            <li><a href="about.html" class="nav-link" data-page="about">About Us</a></li>
+            <li><a href="skincare.html" class="nav-link" data-page="skincare">Skincare</a></li>
+            <li><a href="products.html" class="nav-link" data-page="products">Products</a></li>
+            <li><a href="blog.html" class="nav-link" data-page="blog">Blogs</a></li>
+            <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+
+        </ul>
+
+        <div class="toggles">
+
+            <button class="utility-toggle" id="rtl-toggle"
+                aria-label="Toggle RTL">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+
+            <button class="utility-toggle" id="theme-toggle"
+                aria-label="Toggle dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+<a href="order.html" class="primary-btn"
+   style="background-color: #167D78; color: #FFFFFF; border: 1px solid #167D78;">
+    Order Now
+</a>
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+<main>
+        
+<!-- =================================
+     HOME 1 - HERO SECTION
+================================== -->
+
+<section class="home1-hero">
+
+    <div class="hero-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-content">
+
+           
+
+            <h1>
+                Reveal Your Natural
+                <span>Beauty & Glow</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover the perfect skincare essentials
+                made to nourish, protect and enhance your
+                natural beauty. Give your skin the care it deserves.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="products.html" class="hero-btn primary-btn"
+                style="background-color: #167D78; color: #FFFFFF; border: 1px solid #167D78;">
+                    Shop Now
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="skincare.html" class="hero-btn secondary-btn">
+                    Discover Your Skin Type
+                </a>
+            </div>
+
+            <!-- TRUST POINTS -->
+            <div class="hero-trust">
+
+               <div class="trust-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Skin-Friendly Care</span>
+                </div>
+
+                <div class="trust-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Made With Love</span>
+                </div>
+
+                <div class="trust-item">
+                    <i class="fas fa-star"></i>
+                    <span>Beauty Essentials</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-image">
+
+            <div class="hero-image-bg"></div>
+
+            <img
+                src="Images/hmh11.jpg"
+                alt="Premium skincare and beauty products"
+                class="main-hero-img"
+            >
+
+            <!-- FLOATING CARD -->
+            <div class="hero-floating-card">
+                <div class="floating-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+
+                <div>
+                    <h4>Healthy Skin</h4>
+                    <p>Everyday self-care</p>
+                </div>
+            </div>
+
+            <div class="hero-small-circle"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     HOME 1 - SHOP BY CATEGORY
+========================================= -->
+
+<section class="shop-category-section">
+
+    <div class="category-container">
+
+        <!-- SECTION HEADING -->
+        <div class="category-heading">
+
+            <span class="category-subtitle">
+                EXPLORE OUR COLLECTION
+            </span>
+
+            <h2>
+                Shop By <span>Category</span>
+            </h2>
+
+            <p>
+                Discover skincare essentials specially selected
+                to nourish, protect and enhance your natural glow.
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY GRID -->
+        <div class="category-grid">
+
+            <!-- CATEGORY 1 -->
+            <a href="products.html?category=cleansers"
+               class="category-card">
+
+                <div class="category-image">
+                    <img src="Images/hmp1.jpg"
+                         alt="Face Cleansers">
+
+                    <span class="category-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <div class="category-info">
+                    <h3>Face Cleansers</h3>
+                    <p>Refresh , Cleanse & Remove Impurities</p>
+                </div>
+
+            </a>
+
+
+            <!-- CATEGORY 2 -->
+            <a href="products.html?category=serums"
+               class="category-card">
+
+                <div class="category-image">
+                    <img src="Images/hmp2.jpg"
+                         alt="Face Serums">
+
+                    <span class="category-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <div class="category-info">
+                    <h3>Face Serums</h3>
+                    <p>Glow , Nourish & Restore Radiance</p>
+                </div>
+
+            </a>
+
+
+            <!-- CATEGORY 3 -->
+            <a href="products.html?category=moisturizers"
+               class="category-card">
+
+                <div class="category-image">
+                    <img src="Images/hmp3.jpg"
+                         alt="Moisturizers">
+
+                    <span class="category-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <div class="category-info">
+                    <h3>Moisturizers</h3>
+                    <p>Hydrate , Protect & Lock in Moisture</p>
+                </div>
+
+            </a>
+
+
+            <!-- CATEGORY 4 -->
+            <a href="products.html?category=sunscreens"
+               class="category-card">
+
+                <div class="category-image">
+                    <img src="Images/hmp4.jpg"
+                         alt="Sunscreens">
+
+                    <span class="category-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <div class="category-info">
+                    <h3>Sunscreens</h3>
+                    <p>shield , Protect & Lock in Moisture</p>
+                </div>
+
+            </a>
+
+
+            <!-- CATEGORY 5 -->
+            <a href="products.html?category=masks"
+               class="category-card">
+
+                <div class="category-image">
+                    <img src="Images/hmp5.jpg"
+                         alt="Face Masks">
+
+                    <span class="category-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <div class="category-info">
+                    <h3>Face Masks</h3>
+                    <p>Purify , Rejuvenate & Revive Your Skin</p>
+                </div>
+
+            </a>
+
+
+            <!-- CATEGORY 6 -->
+            <a href="products.html?category=toners"
+               class="category-card">
+
+                <div class="category-image">
+                    <img src="Images/hmp6.jpg"
+                         alt="Face Toners">
+
+                    <span class="category-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <div class="category-info">
+                    <h3>Face Toners</h3>
+                    <p>Balance , Refresh & Refine Skin</p>
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- VIEW ALL BUTTON -->
+        <div class="category-bottom">
+
+            <a href="products.html" class="view-category-btn">
+                Explore All Products
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     HOME 1 - BESTSELLING PRODUCTS
+========================================= -->
+
+<section class="bestselling-section">
+
+    <div class="bestselling-container">
+
+        <!-- SECTION HEADING -->
+        <div class="bestselling-heading">
+
+            <span class="bestselling-subtitle">
+                OUR CUSTOMER FAVORITES
+            </span>
+
+            <h2>
+                Bestselling <span>Products</span>
+            </h2>
+
+            <p>
+                Discover our most-loved skincare essentials
+                carefully selected to bring out your natural glow.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+        <div class="bestselling-grid">
+
+            <!-- PRODUCT 1 -->
+            <a href="product-details.html?product=vitamin-c-serum"
+               class="bestselling-card">
+
+                <div class="bestselling-image">
+                    <img src="Images/hmp7.jpg"
+                         alt="Vitamin C Face Serum">
+                </div>
+
+                <div class="bestselling-info">
+
+                    <span class="product-category">
+                        FACE SERUM
+                    </span>
+
+                    <h3>Vitamin C Face Serum</h3>
+
+                    <p class="product-price">₹599</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- PRODUCT 2 -->
+            <a href="product-details.html?product=hydrating-moisturizer"
+               class="bestselling-card">
+
+                <div class="bestselling-image">
+                    <img src="Images/hmp8.jpg"
+                         alt="Hydrating Moisturizer">
+                </div>
+
+                <div class="bestselling-info">
+
+                    <span class="product-category">
+                        MOISTURIZER
+                    </span>
+
+                    <h3>Hydrating Moisturizer</h3>
+
+                    <p class="product-price">₹449</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- PRODUCT 3 -->
+            <a href="product-details.html?product=gentle-face-cleanser"
+               class="bestselling-card">
+
+                <div class="bestselling-image">
+                    <img src="Images/hmp9.avif"
+                         alt="Gentle Face Cleanser">
+                </div>
+
+                <div class="bestselling-info">
+
+                    <span class="product-category">
+                        FACE CLEANSER
+                    </span>
+
+                    <h3>Gentle Face Cleanser</h3>
+
+                    <p class="product-price">₹299</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- PRODUCT 4 -->
+            <a href="product-details.html?product=daily-sunscreen"
+               class="bestselling-card">
+
+                <div class="bestselling-image">
+                    <img src="Images/hmp10.avif"
+                         alt="Daily Sunscreen SPF 50">
+                </div>
+
+                <div class="bestselling-info">
+
+                    <span class="product-category">
+                        SUN PROTECTION
+                    </span>
+
+                    <h3>Daily Sunscreen SPF 50</h3>
+
+                    <p class="product-price">₹399</p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- VIEW ALL -->
+        <div class="bestselling-bottom">
+
+            <a href="products.html" class="bestselling-view-btn">
+                Explore All Products
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+   
+<!-- =========================================
+     HOME 1 - SHOP BY SKIN CONCERN
+========================================= -->
+
+<section class="skin-concern-section">
+
+    <div class="skin-concern-container">
+
+        <!-- SECTION HEADING -->
+        <div class="skin-concern-heading">
+
+            <span class="skin-concern-subtitle">
+                PERSONALIZED SKINCARE
+            </span>
+
+            <h2>
+                Shop By <span>Skin Concern</span>
+            </h2>
+
+            <p>
+                Every skin is unique. Find the right skincare
+                essentials for your individual skin needs.
+            </p>
+
+        </div>
+
+
+        <!-- CONCERN GRID -->
+        <div class="skin-concern-grid">
+
+            <!-- CONCERN 1 -->
+            <a href="products.html?concern=acne"
+               class="concern-card">
+
+                <div class="concern-image">
+                    <img src="Images/hmp11.jpg"
+                         alt="Acne and pimple care">
+
+                    <span class="concern-number">01</span>
+                </div>
+
+                <div class="concern-info">
+                    <h3>Acne & Pimples</h3>
+                    <p>Explore gentle care for blemish-prone skin.</p>
+
+                    <span class="concern-link">
+                        Explore Products
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+
+            <!-- CONCERN 2 -->
+            <a href="products.html?concern=dark-spots"
+               class="concern-card">
+
+                <div class="concern-image">
+                    <img src="Images/hmp12.jpg"
+                         alt="Dark spots skincare">
+
+                    <span class="concern-number">02</span>
+                </div>
+
+                <div class="concern-info">
+                    <h3>Dark Spots</h3>
+                    <p>Discover products for uneven-looking skin tone.</p>
+
+                    <span class="concern-link">
+                        Explore Products
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+
+            <!-- CONCERN 3 -->
+            <a href="products.html?concern=dry-skin"
+               class="concern-card">
+
+                <div class="concern-image">
+                    <img src="Images/hmp13.jpg"
+                         alt="Dry skin hydration care">
+
+                    <span class="concern-number">03</span>
+                </div>
+
+                <div class="concern-info">
+                    <h3>Dry Skin</h3>
+                    <p>Find nourishing and hydrating essentials.</p>
+
+                    <span class="concern-link">
+                        Explore Products
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+
+            <!-- CONCERN 4 -->
+            <a href="products.html?concern=oily-skin"
+               class="concern-card">
+
+                <div class="concern-image">
+                    <img src="Images/hmp14.jpg"
+                         alt="Oily skin skincare">
+
+                    <span class="concern-number">04</span>
+                </div>
+
+                <div class="concern-info">
+                    <h3>Oily Skin</h3>
+                    <p>Discover lightweight everyday skincare.</p>
+
+                    <span class="concern-link">
+                        Explore Products
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+            </a>
+
+
+            <!-- CONCERN 5 -->
+            <a href="products.html?concern=sensitive-skin"
+               class="concern-card">
+
+                <div class="concern-image">
+                    <img src="Images/hmp15.jpg"
+                         alt="Sensitive skin care">
+
+                    <span class="concern-number">05</span>
+                </div>
+
+                <div class="concern-info">
+                    <h3>Sensitive Skin</h3>
+                    <p>Explore gentle skincare for delicate skin.</p>
+
+                    <span class="concern-link">
+                        Explore Products
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+
+            </a>
+            <!-- CONCERN 6 -->
+<a href="products.html?concern=aging"
+   class="concern-card">
+
+    <div class="concern-image">
+        <img src="Images/hmp16.jpg"
+             alt="Aging and fine lines skincare">
+
+        <span class="concern-number">06</span>
+    </div>
+
+    <div class="concern-info">
+        <h3>Aging & Fine Lines</h3>
+
+        <p>
+            Discover skincare for smoother and
+            firmer-looking skin.
+        </p>
+
+        <span class="concern-link">
+            Explore Products
+            <i class="fas fa-arrow-right"></i>
+        </span>
+    </div>
+
+</a>
+
+        </div>
+
+
+        <!-- BOTTOM BUTTON -->
+        <div class="concern-bottom">
+            
+
+            <a href="skincare.html" class="concern-quiz-btn">
+            
+                Take Our Skin Quiz
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     WHY CHOOSE GLOW & GRACE
+========================================= -->
+
+<section class="why-choose-section">
+
+    <div class="why-choose-container">
+
+        <!-- Section Heading -->
+        <div class="why-choose-heading">
+            <span class="section-subtitle">WHY GLOW & GRACE</span>
+
+            <h2>
+                Your Skin Deserves
+                <span>The Best Care</span>
+            </h2>
+
+            <p>
+                We believe skincare should be simple, gentle and effective.
+                Discover beauty essentials that make your everyday routine
+                more enjoyable.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="why-choose-grid">
+
+            <!-- Feature 01 -->
+            <div class="why-choose-card">
+
+                <div class="why-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <h3>Skin-Friendly Ingredients</h3>
+
+                <p>
+                    Discover carefully selected skincare essentials
+                    designed with your skin's comfort in mind.
+                </p>
+
+            </div>
+
+            <!-- Feature 02 -->
+            <div class="why-choose-card">
+
+                <div class="why-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <h3>Made With Care</h3>
+
+                <p>
+                    Every product is selected with care to help make
+                    your daily skincare routine special.
+                </p>
+
+            </div>
+
+            <!-- Feature 03 -->
+            <div class="why-choose-card">
+
+                <div class="why-icon">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+
+                <h3>For Every Skin Type</h3>
+
+                <p>
+                    Explore skincare essentials for dry, oily,
+                    combination and sensitive skin types.
+                </p>
+
+            </div>
+
+            <!-- Feature 04 -->
+            <div class="why-choose-card">
+
+                <div class="why-icon">
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+
+                <h3>Simple Beauty Routine</h3>
+
+                <p>
+                    Find everyday skincare essentials that help you
+                    build a simple and enjoyable beauty routine.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Message -->
+        <div class="why-choose-bottom">
+
+            <div class="why-bottom-content">
+                <h3>Love Your Skin, Every Day!</h3>
+
+                <p>
+                    Give your skin the care and attention it deserves
+                    with Glow & Grace.
+                </p>
+            </div>
+
+            <a href="products.html" class="why-choose-btn">
+                Explore Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     SECTION 07 - SKINCARE TIPS & ADVICE
+========================================= -->
+
+<section class="skincare-tips-section">
+
+    <div class="skincare-tips-container">
+
+        <!-- Section Heading -->
+        <div class="skincare-tips-heading">
+
+            <span class="tips-subtitle">BEAUTY & SKINCARE JOURNAL</span>
+
+            <h2>
+                Skincare Tips &
+                <span>Expert Advice</span>
+            </h2>
+
+            <p>
+                Explore simple skincare tips, helpful beauty guides
+                and everyday routines to keep your skin feeling fresh.
+            </p>
+
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="skincare-tips-grid">
+
+            <!-- Blog Card 01 -->
+            <article class="skincare-tip-card">
+
+                <a href="blog-details.html?article=daily-skincare-routine"
+                   class="tip-image">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOcYDxtnWZlwxJrTuxTIVHtiUeH6Qrd97n5LtkAqj5_w&s=10"
+                         alt="Daily skincare routine">
+
+                    <span class="tip-category">SKINCARE ROUTINE</span>
+
+                </a>
+
+                <div class="tip-content">
+
+                    <div class="tip-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            Skincare Guide
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            5 Min Read
+                        </span>
+                    </div>
+
+                    <h3>
+                        <a href="blog-details.html?article=daily-skincare-routine">
+                            5 Simple Steps for a Daily Skincare Routine
+                        </a>
+                    </h3>
+
+                    <p>
+                        Learn how to build a simple morning and evening
+                        skincare routine for healthy-looking skin.
+                    </p>
+
+                    <a href="blog-details.html?article=daily-skincare-routine"
+                       class="tip-read-more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Blog Card 02 -->
+            <article class="skincare-tip-card">
+
+                <a href="blog-details.html?article=choose-moisturizer"
+                   class="tip-image">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR9iLzuuLGVIFf7md92AU5ZXM9_pkf7CBKraZprj_k2Q&s=10"
+                         alt="Choosing the right moisturizer">
+
+                    <span class="tip-category">SKINCARE TIPS</span>
+
+                </a>
+
+                <div class="tip-content">
+
+                    <div class="tip-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            Beauty Tips
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            4 Min Read
+                        </span>
+                    </div>
+
+                    <h3>
+                        <a href="blog-details.html?article=choose-moisturizer">
+                            How to Choose the Right Moisturizer for Your Skin
+                        </a>
+                    </h3>
+
+                    <p>
+                        Understand your skin type and discover what to
+                        look for when choosing a daily moisturizer.
+                    </p>
+
+                    <a href="blog-details.html?article=choose-moisturizer"
+                       class="tip-read-more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Blog Card 03 -->
+            <article class="skincare-tip-card">
+
+                <a href="blog-details.html?article=sunscreen-guide"
+                   class="tip-image">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCKQ-lDeRVLz8eiPPcUIzz1hzLvy9S6M8OHjfXe86uvA&s=10"
+                         alt="Applying sunscreen for daily skin protection">
+
+                    <span class="tip-category">SUN PROTECTION</span>
+
+                </a>
+
+                <div class="tip-content">
+
+                    <div class="tip-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            Beauty Guide
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            6 Min Read
+                        </span>
+                    </div>
+
+                    <h3>
+                        <a href="blog-details.html?article=sunscreen-guide">
+                            Why Sunscreen Should Be Part of Your Daily Routine
+                        </a>
+                    </h3>
+
+                    <p>
+                        Discover why daily sun protection matters and
+                        how to make sunscreen part of your routine.
+                    </p>
+
+                    <a href="blog-details.html?article=sunscreen-guide"
+                       class="tip-read-more">
+                        Read More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- View All Button -->
+        <div class="tips-view-all">
+
+            <a href="blog.html" class="tips-view-btn">
+                View All Articles
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     SECTION 08 - skin care routine
+========================================= -->
+
+<section class="newsletter-cta-section">
+
+    <div class="newsletter-cta-container">
+
+        <!-- NEWSLETTER -->
+       
+<!-- PERSONALIZED SKINCARE ROUTINE SECTION -->
+
+<section class="routine-section">
+
+    <div class="routine-container">
+
+        <div class="routine-heading">
+            <span class="routine-tag">A ROUTINE MADE FOR YOU</span>
+
+            <h2>
+                Your Skin Deserves
+                <span>The Perfect Routine</span>
+            </h2>
+
+            <p>
+                Great skin begins with the right daily habits.
+                Discover simple skincare steps designed to nourish,
+                protect and bring out your natural glow.
+            </p>
+        </div>
+
+        <div class="routine-grid">
+
+            <!-- STEP 1 -->
+            <div class="routine-card">
+                <div class="routine-image">
+                    <img src="Images/aahh1.jpg" alt="Gentle skincare cleanser">
+                    <span class="routine-number">01</span>
+                </div>
+
+                <div class="routine-info">
+                    <h3>Cleanse</h3>
+                    <p>
+                        Gently remove dirt, excess oil and impurities
+                        to create a fresh and clean base.
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="routine-card">
+                <div class="routine-image">
+                    <img src="Images/aahh22.jpg" alt="Skincare serum">
+                    <span class="routine-number">02</span>
+                </div>
+
+                <div class="routine-info">
+                    <h3>Treat</h3>
+                    <p>
+                        Give your skin targeted care with nourishing
+                        serums that support your skin goals.
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="routine-card">
+                <div class="routine-image">
+                    <img src="Images/aahh3.jpg" alt="Skincare moisturizer">
+                    <span class="routine-number">03</span>
+                </div>
+
+                <div class="routine-info">
+                    <h3>Moisturize</h3>
+                    <p>
+                        Lock in hydration and keep your skin soft,
+                        smooth and comfortable throughout the day.
+                    </p>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="routine-card">
+                <div class="routine-image">
+                    <img src="Images/aahh4.jpg" alt="Daily sunscreen">
+                    <span class="routine-number">04</span>
+                </div>
+
+                <div class="routine-info">
+                    <h3>Protect</h3>
+                    <p>
+                        Finish your morning routine with sunscreen
+                        to help protect your skin from UV damage.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="routine-action">
+            <a href="skincare.html">Discover Your Skin Needs</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- CALL TO ACTION -->
+        <div class="beauty-cta-box">
+
+            <div class="beauty-cta-content">
+
+                <span class="cta-subtitle">
+                    YOUR BEAUTY JOURNEY STARTS HERE
+                </span>
+
+                <h2>
+                    Give Your Skin
+                    <span>The Love It Deserves</span>
+                </h2>
+
+                <p>
+                    Discover skincare essentials that make your
+                    everyday beauty routine feel special.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="products.html" class="cta-shop-btn">
+                        Shop Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="skincare.html" class="cta-quiz-btn">
+                        Take Skin Quiz
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="beauty-cta-decoration">
+                <i class="fa-solid fa-spa"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-bar">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-brand-logo">
+                    <img src="Images/g&glogo1.png" alt="Glow & Grace Logo">
+                </div>
+
+                <div class="footer-brand-title">
+                    <h2>GLOW <span>& GRACE</span></h2>
+                    <p>SKINCARE • BEAUTY • WELLNESS</p>
+                </div>
+
+            </div>
+
+            <div class="brand-info">
+                <p>
+                    Thoughtful skincare, simple routines and everyday
+                    moments of self-care. Every kind of skin deserves care.
+                </p>
+            </div>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a>
+            <a href="skincare.html"><i class="fa-solid fa-chevron-right"></i> Skincare</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a>
+            <a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blogs</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Skincare</h3>
+
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Cleansers</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Serums</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Moisturizers</a>
+            <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Sunscreen</a>
+            <a href="services.html"><i class="fa-solid fa-chevron-right"></i> Skin Consultation</a>
+            <a href="booking.html"><i class="fa-solid fa-chevron-right"></i> Book Consultation</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Customer Support</h3>
+
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> FAQs</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Shipping Information</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Returns & Refunds</a>
+            <a href="privacy-policy.html"><i class="fa-solid fa-chevron-right"></i> Privacy Policy</a>
+            <a href="terms-of-service.html"><i class="fa-solid fa-chevron-right"></i> Terms of Service</a>
+            <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Support</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Contact Us</h3>
+
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+
+            <p><i class="fa-solid fa-envelope"></i> hello@glowandgrace.com</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</p>
+
+            <p><i class="fa-regular fa-clock"></i> Mon - Sat: 9 AM - 6 PM</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2026 Glow & Grace. All Rights Reserved.
+        </p>
+
+        <div class="footer-legal-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span>|</span>
+            <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+
+</body>
+</html>
