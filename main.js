@@ -13,73 +13,85 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.getElementById("navLinks");
 
 
-   // =====================================
-// CURRENT PAGE ACTIVE NAVIGATION
-// =====================================
+    // =====================================
+    // CURRENT PAGE ACTIVE NAVIGATION
+    // =====================================
 
-function setActiveNavigation() {
+    function setActiveNavigation() {
 
-    const currentPage = window.location.pathname
-        .split("/")
-        .pop()
-        .toLowerCase();
+        const currentPage = window.location.pathname
+            .split("/")
+            .pop()
+            .toLowerCase();
 
-    const pageMap = {
-        "": "home",
-        "index.html": "home",
-        "home2.html": "home",
+        // All page names and their navigation categories
+        const pageMap = {
 
-        "about.html": "about",
+            "": "home",
+            "index.html": "home",
+            "home2.html": "home",
 
-        "skincare.html": "skincare",
-        "services.html": "skincare",
+            "about.html": "about",
 
-        "products.html": "products",
-        "product-details.html": "products",
+            "skincare.html": "skincare",
+            "services.html": "skincare",
 
-        "blog.html": "blog",
-        "blog-details.html": "blog",
+            "products.html": "products",
+            "product-details.html": "products",
 
-        "contact.html": "contact"
-    };
+            "blog.html": "blog",
+            "blog-details.html": "blog",
 
-    const activePage = pageMap[currentPage] || "";
+            "contact.html": "contact"
 
-    const navLinks = document.querySelectorAll("#navLinks a");
+        };
 
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-        link.removeAttribute("aria-current");
-    });
+        const activePage = pageMap[currentPage] || "";
 
-    // Highlight matching navigation link
-    document.querySelectorAll("#navLinks a[data-page]").forEach(link => {
+        if (!navLinks) return;
 
-        let linkPage = link.dataset.page.toLowerCase();
+        // Remove old active classes
+        navLinks.querySelectorAll("a").forEach(function (link) {
 
-        // Normalize different Skincare values
-        if (linkPage === "services") {
-            linkPage = "skincare";
+            link.classList.remove("active");
+            link.removeAttribute("aria-current");
+
+        });
+
+        // Highlight matching navigation link
+        navLinks.querySelectorAll("a[data-page]").forEach(function (link) {
+
+            let linkPage = link.getAttribute("data-page");
+
+            // Normalize Skincare page values
+            if (linkPage === "services") {
+                linkPage = "skincare";
+            }
+
+            if (linkPage === activePage && activePage !== "home") {
+
+                link.classList.add("active");
+
+                link.setAttribute("aria-current", "page");
+
+            }
+
+        });
+
+        // Highlight Home dropdown button
+        if (activePage === "home" && homeButton) {
+
+            homeButton.classList.add("active");
+
+            homeButton.setAttribute("aria-current", "page");
+
         }
 
-        if (linkPage === activePage && activePage !== "home") {
-            link.classList.add("active");
-            link.setAttribute("aria-current", "page");
-        }
-
-    });
-
-    // Home dropdown active state
-    const homeButton = document.getElementById("homeDropdownBtn");
-
-    if (activePage === "home" && homeButton) {
-        homeButton.classList.add("active");
-        homeButton.setAttribute("aria-current", "page");
     }
 
-}
+    // Run active navigation after HTML loads
+    setActiveNavigation();
 
-document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
     // =====================================
     // HOME DROPDOWN
@@ -104,6 +116,7 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
         });
 
+
         // Close dropdown when clicking outside
         document.addEventListener("click", function (event) {
 
@@ -119,6 +132,7 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
             }
 
         });
+
 
         // Close dropdown after selecting a page
         dropdown.querySelectorAll(".dropdown-menu a").forEach(function (link) {
@@ -146,7 +160,12 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
     if (menuButton && navLinks) {
 
         menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Open navigation menu");
+
+        menuButton.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
+
 
         menuButton.addEventListener("click", function (event) {
 
@@ -161,7 +180,9 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
             menuButton.setAttribute(
                 "aria-label",
-                isOpen ? "Close navigation menu" : "Open navigation menu"
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
             );
 
             menuButton.innerHTML = isOpen
@@ -170,12 +191,12 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
         });
 
+
         // Close mobile menu after clicking page links
         navLinks.querySelectorAll("a").forEach(function (link) {
 
             link.addEventListener("click", function () {
 
-                // Keep dropdown open/close behavior separate
                 if (link.classList.contains("home-btn")) {
                     return;
                 }
@@ -198,6 +219,7 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
             });
 
         });
+
 
         // Close mobile menu when clicking outside
         document.addEventListener("click", function (event) {
@@ -265,14 +287,20 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
     }
 
+
     // Restore saved direction
-    const savedDirection = localStorage.getItem("glowGraceDirection");
+    const savedDirection = localStorage.getItem(
+        "glowGraceDirection"
+    );
 
     if (savedDirection === "rtl" || savedDirection === "ltr") {
+
         root.dir = savedDirection;
+
     }
 
     updateDirectionButton();
+
 
     if (rtlButton) {
 
@@ -334,14 +362,20 @@ document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
     }
 
+
     // Restore saved theme
-    const savedTheme = localStorage.getItem("glowGraceTheme");
+    const savedTheme = localStorage.getItem(
+        "glowGraceTheme"
+    );
 
     if (savedTheme === "dark" || savedTheme === "light") {
+
         root.dataset.theme = savedTheme;
+
     }
 
     updateThemeButton();
+
 
     if (themeButton) {
 
