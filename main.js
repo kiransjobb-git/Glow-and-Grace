@@ -19,77 +19,140 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function setActiveNavigation() {
 
-        const currentPage = window.location.pathname
-            .split("/")
-            .pop()
-            .toLowerCase();
+        if (!navLinks) return;
 
-        // All page names and their navigation categories
+        // Get current page URL
+        let currentPath = window.location.pathname
+            .toLowerCase()
+            .replace(/\/+$/, "");
+
+        let currentPage = currentPath.split("/").pop() || "home";
+
+        // Support both .html and extensionless Netlify URLs
         const pageMap = {
 
             "": "home",
+            "home": "home",
+            "index": "home",
             "index.html": "home",
+            "home1": "home",
+            "home1.html": "home",
+            "home2": "home",
             "home2.html": "home",
 
+            "about": "about",
             "about.html": "about",
 
+            "skincare": "skincare",
             "skincare.html": "skincare",
+            "services": "skincare",
             "services.html": "skincare",
+            "skin-quiz": "skincare",
+            "skin-quiz.html": "skincare",
 
+            "products": "products",
             "products.html": "products",
+            "product-details": "products",
             "product-details.html": "products",
 
+            "blog": "blog",
             "blog.html": "blog",
+            "blogs": "blog",
+            "blogs.html": "blog",
+            "blog-details": "blog",
             "blog-details.html": "blog",
 
+            "contact": "contact",
             "contact.html": "contact"
 
         };
 
         const activePage = pageMap[currentPage] || "";
 
-        if (!navLinks) return;
 
-        // Remove old active classes
-        navLinks.querySelectorAll("a").forEach(function (link) {
+        // Remove previous active classes
+        navLinks.querySelectorAll("a, button").forEach(function (item) {
 
-            link.classList.remove("active");
-            link.removeAttribute("aria-current");
+            item.classList.remove("active");
+            item.removeAttribute("aria-current");
 
         });
 
-        // Highlight matching navigation link
+
+        // Check every navigation link
         navLinks.querySelectorAll("a[data-page]").forEach(function (link) {
 
             let linkPage = link.getAttribute("data-page");
 
-            // Normalize Skincare page values
-            if (linkPage === "services") {
-                linkPage = "skincare";
-            }
+            if (!linkPage) return;
 
-            if (linkPage === activePage && activePage !== "home") {
+            linkPage = linkPage.toLowerCase().trim();
+
+            // Normalize navigation categories
+            const normalizedLinkPage = pageMap[linkPage] || linkPage;
+
+            if (
+                normalizedLinkPage === activePage &&
+                activePage !== "home"
+            ) {
 
                 link.classList.add("active");
-
                 link.setAttribute("aria-current", "page");
 
             }
 
         });
 
-        // Highlight Home dropdown button
+
+        // Highlight Home dropdown button on Home pages
         if (activePage === "home" && homeButton) {
 
             homeButton.classList.add("active");
-
             homeButton.setAttribute("aria-current", "page");
+
+        }
+
+
+        // Highlight Home dropdown when Home 1 or Home 2 is selected
+        if (activePage === "home" && dropdown) {
+
+            dropdown.querySelectorAll(".dropdown-menu a").forEach(function (link) {
+
+                const href = link.getAttribute("href");
+
+                if (!href) return;
+
+                const linkPath = new URL(href, window.location.origin)
+                    .pathname
+                    .toLowerCase()
+                    .replace(/\/+$/, "");
+
+                const linkPage = linkPath.split("/").pop() || "home";
+
+                const normalizedPage = pageMap[linkPage] || linkPage;
+
+                if (normalizedPage === "home") {
+
+                    const currentFile = currentPage.replace(".html", "");
+                    const dropdownFile = linkPage.replace(".html", "");
+
+                    if (currentFile === dropdownFile) {
+
+                        link.classList.add("active");
+                        link.setAttribute("aria-current", "page");
+
+                    }
+
+                }
+
+            });
 
         }
 
     }
 
-    // Run active navigation after HTML loads
+
+    // Run active navigation
     setActiveNavigation();
 
 
