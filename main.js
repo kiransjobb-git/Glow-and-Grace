@@ -13,57 +13,59 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.getElementById("navLinks");
 
 
-    // =====================================
-    // CURRENT PAGE ACTIVE NAVIGATION
-    // =====================================
+   // =====================================
+// CURRENT PAGE ACTIVE NAVIGATION
+// =====================================
 
-    function setActiveNavigation() {
+function setActiveNavigation() {
 
-        const currentPage = window.location.pathname
-            .split("/")
-            .pop()
-            .toLowerCase();
+    const currentPage = window.location.pathname
+        .split("/")
+        .pop()
+        .toLowerCase();
 
-        const pageMap = {
-    "": "home",
-    "index.html": "home",
-    "home2.html": "home",
-    "about.html": "about",
-    "skincare.html": "skincare",
+    const pageMap = {
+        "": "home",
+        "index.html": "home",
+        "home2.html": "home",
+        "about.html": "about",
+        "skincare.html": "skincare",
 
-    // Products pages
-    "products.html": "products",
-    "product-details.html": "products",
+        "products.html": "products",
+        "product-details.html": "products",
 
-    // Blog pages
-    "blog.html": "blog",
-    "blog-details.html": "blog",
+        "blog.html": "blog",
+        "blog-details.html": "blog",
 
-    "contact.html": "contact"
-};
+        "contact.html": "contact"
+    };
 
-        const activePage = pageMap[currentPage] || "";
+    const activePage = pageMap[currentPage] || "";
 
-        // Remove previous active classes
-        document.querySelectorAll(".nav-links a").forEach(function (link) {
-            link.classList.remove("active");
-            link.removeAttribute("aria-current");
-        });
+    // Select all navigation links
+    const allLinks = document.querySelectorAll("#navLinks a");
 
-        // Highlight matching navigation link
-        document.querySelectorAll(".nav-links a[data-page]").forEach(function (link) {
+    allLinks.forEach(function(link) {
 
-            if (link.dataset.page === activePage) {
+        link.classList.remove("active");
+        link.removeAttribute("aria-current");
 
-                link.classList.add("active");
-                link.setAttribute("aria-current", "page");
+        if (link.dataset.page === activePage && activePage !== "") {
 
-            }
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
 
-        });
+        }
 
-        // Home dropdown active for both home pages
-        if (activePage === "home" && homeButton) {
+    });
+
+    // Home dropdown highlight
+    if (homeButton) {
+
+        homeButton.classList.remove("active");
+        homeButton.removeAttribute("aria-current");
+
+        if (activePage === "home") {
 
             homeButton.classList.add("active");
             homeButton.setAttribute("aria-current", "page");
@@ -72,8 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    setActiveNavigation();
+}
 
+setActiveNavigation();
 
     // =====================================
     // HOME DROPDOWN
