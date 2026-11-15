@@ -28,8 +28,11 @@ function setActiveNavigation() {
         "": "home",
         "index.html": "home",
         "home2.html": "home",
+
         "about.html": "about",
+
         "skincare.html": "skincare",
+        "services.html": "skincare",
 
         "products.html": "products",
         "product-details.html": "products",
@@ -42,41 +45,41 @@ function setActiveNavigation() {
 
     const activePage = pageMap[currentPage] || "";
 
-    // Select all navigation links
-    const allLinks = document.querySelectorAll("#navLinks a");
+    const navLinks = document.querySelectorAll("#navLinks a");
 
-    allLinks.forEach(function(link) {
-
+    navLinks.forEach(link => {
         link.classList.remove("active");
         link.removeAttribute("aria-current");
+    });
 
-        if (link.dataset.page === activePage && activePage !== "") {
+    // Highlight matching navigation link
+    document.querySelectorAll("#navLinks a[data-page]").forEach(link => {
 
+        let linkPage = link.dataset.page.toLowerCase();
+
+        // Normalize different Skincare values
+        if (linkPage === "services") {
+            linkPage = "skincare";
+        }
+
+        if (linkPage === activePage && activePage !== "home") {
             link.classList.add("active");
             link.setAttribute("aria-current", "page");
-
         }
 
     });
 
-    // Home dropdown highlight
-    if (homeButton) {
+    // Home dropdown active state
+    const homeButton = document.getElementById("homeDropdownBtn");
 
-        homeButton.classList.remove("active");
-        homeButton.removeAttribute("aria-current");
-
-        if (activePage === "home") {
-
-            homeButton.classList.add("active");
-            homeButton.setAttribute("aria-current", "page");
-
-        }
-
+    if (activePage === "home" && homeButton) {
+        homeButton.classList.add("active");
+        homeButton.setAttribute("aria-current", "page");
     }
 
 }
 
-setActiveNavigation();
+document.addEventListener("DOMContentLoaded", setActiveNavigation);
 
     // =====================================
     // HOME DROPDOWN
